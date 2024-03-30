@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Form</title>
+<link rel="stylesheet" href="/styles/payment.css">
+</head>
+<body>
+    <div class="checkout-container">
+    
+        <div class="payment-details">
+          
+          <section class="payment-information">
+            <h2>Payment Details</h2>
+            <!-- Payment form -->
+            <form id="payment-form">
+              <label for="card-number">Card Number *</label>
+              <input type="text" id="card-number" name="card_number" required>
+    
+              <label for="cardholder-name">Cardholder Name *</label>
+              <input type="text" id="cardholder-name" name="cardholder_name" required>
+    
+              <label for="expiry-date">Expiry Date *</label>
+              <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YY" required>
+    
+              <label for="cvv">CVV *</label>
+              <input type="text" id="cvv" name="cvv" required>
+    
+              <button type="button" onclick="clearPaymentFields()">Clear Fields</button>
+              <button type="submit">Save Changes</button>
+            </form>
+          </section>
+          
+
+          
+        </div>
+        
+  
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <p>Reference: #0096703</p>
+          
+       
+          <div class="order-item">
+            <p>Item Name: Hogwarts Legacy - PS4</p>
+            <p>Item Price: £59.99</p>
+            <p>Quantity: 1</p>
+          </div>
+          
+          <!-- Order Total -->
+          <p>Order Total: £59.99</p>
+          
+          <button type="button" onclick="resetForm()">Reset Form</button>
+          <button type="button" onclick="makePayment()">Make Payment</button>
+          
+        </div>
+        
+      </div>
+<script src="/js/payment.js"></script>
+</body>
+</html>

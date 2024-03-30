@@ -1,0 +1,303 @@
+/* CSS Code */
+
+/* Common Section Start */
+*{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    overflow-x: hidden; 
+}
+
+body{
+    width: 100%;
+}
+/* Common Section End */
+
+/* Header Section start */
+.nav{
+    justify-content: space-between;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right:0;
+    left:0;
+    background: #009E3C;
+    padding: 10px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+}
+
+
+header .navbar ul{
+    list-style:none;  
+}
+
+header .navbar ul li{
+    position: relative;
+    float:left;
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    display:block;
+    font-weight: 500;
+}
+header .navbar ul li a:hover{
+    border-radius: 0px ;
+    font-size: 18px;
+    color: #009E3C;
+    background-color: #fff ;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    display:none; 
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li a{
+    color:rgb(119, 195, 109) ;
+}
+header .navbar ul li ul li a:hover{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background: rgb(119, 195, 109);
+    border-radius: 0%;
+}
+header .navbar ul li:focus-within > ul, 
+
+header .navbar ul li:hover > ul{
+    display:initial;
+}
+.nav-links .active {
+    background-color: #fff;
+    color: #009E3C;
+    font-weight: bold;
+}
+.nav-icon{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+.icon{
+    margin: 0 20px;
+}
+#toggle-bar{
+    display:none;
+}
+header label{
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;
+    display: none;
+}
+/* Header Section End */
+
+/* Responsive Section start */
+@media(max-width:991px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        padding:20px;
+        background: #009E3C;
+        color: #fff;
+    }
+    header label{
+        display: initial;
+    }
+    .logo{
+        font-size: 50px;
+        max-height: 10%;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background: #009E3C;
+        color: #fff;
+        display: none;
+    }
+    header .navbar ul li a{
+        color:#fff;
+        font-size: 20px;
+        padding: 30px;
+    }
+    header .navbar ul li a:hover{
+        border-radius: 0%;
+        background-color: #009E3C;
+        color: #fff;
+        text-decoration: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    header .navbar ul li ul{
+        position:relative;
+        width: 100%
+    }
+    header .navbar ul li ul li{
+        background: #fff;
+        margin: 0px 35px;
+    }
+    header .navbar ul li ul li a{
+        padding:10px;
+    }
+
+    .nav-icon{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 05px;
+    }
+    .icon{
+        margin: 0 8px;
+    }
+
+    #toggle-bar:checked ~ .navbar{
+        display: initial;
+    }
+} 
+
+
+/* When the nav is open, show the nav list */
+.navbar.nav-open {
+    display: block;
+}
+
+/* Toggle icon styles */
+#toggle-bar:checked + label > .fa-bars {
+    display: none; 
+}
+
+#toggle-bar:checked + label > .fa-times {
+    display: inline-block; 
+}
+
+#toggle-bar + label > .fa-times {
+    display: none; 
+}
+
+label[for="toggle-bar"] {
+    cursor: pointer; 
+}
+
+
+/* Footer section starts */
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 100px;
+    padding-left: 3%;
+}
+.footer .container {
+    width: 100%;
+    max-width: 100%; 
+    padding: 0; 
+    margin: 0 auto; 
+  }
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background-color: #009E3C;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #009E3C;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+/* footer section end */

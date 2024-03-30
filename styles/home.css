@@ -1,0 +1,93 @@
+
+body, h1, h2, p, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero-sec.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ttl{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.box-item {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 20px 50px 50px 50px;
+}
+
+.item {
+    display: inline-block;
+    width: 24%;
+    margin-right: 1%;
+    text-align: center;
+    background-color: #e8eaec;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.buy-btn{
+    padding: 10px 30px 10px 30px;
+    font-size: 0.8em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.details{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.details-2{
+    margin-right: 50px;
+    margin-left: 50px;
+}
