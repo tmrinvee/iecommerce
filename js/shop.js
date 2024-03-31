@@ -22,9 +22,7 @@ function updateBasket() {
   document.getElementById('total').textContent = total.toFixed(2);
 }
 
-function checkout() {
-  alert('Checkout - Total: $' + document.getElementById('total').textContent);
-}
+
 
 
 

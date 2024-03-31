@@ -104,7 +104,7 @@ body {
   }
   input[type=submit] {
     background-color: #4CAF50;
-    color: white;
+    color: #000;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -112,7 +112,7 @@ body {
     margin: 30px 200px 30px 200px;
   }
   input[type=submit]:hover {
-    background-color: #000000;
+    background-color: #ffffff;
     color: #4CAF50;
   }
   .required:after {
